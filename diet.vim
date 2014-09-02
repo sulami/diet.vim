@@ -30,6 +30,7 @@ syn match   dietIdChar "#{\@!" contained nextgroup=dietId
 syn match   dietClass "\%(\w\|-\)\+" contained nextgroup=@dietComponent
 syn match   dietId "\%(\w\|-\)\+" contained nextgroup=@dietComponent
 syn region  dietDocType start="^\s*!!!" end="$"
+syn match   dietContinuation "^\s*|"
 
 syn match   dietPlainChar "\\" contained
 syn region  dietInterpolation matchgroup=dietInterpolationDelimiter start="#{" end="}" contains=@htmlJavaScript
@@ -49,6 +50,7 @@ syn region  dietCssBlock        start="^\z(\s*\)style" nextgroup=@dietComponent,
 syn match  dietError "\$" contained
 
 hi def link dietTag                    Special
+hi def link dietContinuation           Special
 hi def link dietAttributeString        String
 hi def link dietAttributesDelimiter    Identifier
 hi def link dietIdChar                 Special
