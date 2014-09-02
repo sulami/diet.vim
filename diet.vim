@@ -4,6 +4,7 @@
 " Maintainer:   Robin Schroer <sulamiification@gmail.com>
 " Last Change:  2014-09-02
 " Version:      0.1
+" Filenames:    *.dt, *.diet
 "
 " Please submit bugs/comments/suggestions to the github repo:
 " https://github.com/sulami/diet.vim
